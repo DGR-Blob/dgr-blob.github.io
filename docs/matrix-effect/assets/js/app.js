@@ -19,7 +19,7 @@ gradientColor.addColorStop(0.8, "blue");
 gradientColor.addColorStop(0, "magenta");
 
 // default color
-let defaultColor = gradientColor;
+let defaultColor = singleColor;
 
 // creating effect object which initializes symbols array with Symbol objects
 const effect = new Effect(canvas.width, canvas.height);
