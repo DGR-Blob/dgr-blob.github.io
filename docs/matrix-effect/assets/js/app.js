@@ -70,7 +70,16 @@ window.addEventListener("resize", () => {
   gradientColor.addColorStop(0, "magenta");
 });
 
-//double mouse click event
+//listener for matrix-link a element
+let matrixLink = document.getElementById("matrix-link");
+
+matrixLink.addEventListener("click", () => {
+  defaultColor === singleColor
+  ? (defaultColor = gradientColor)
+  : (defaultColor = singleColor);
+});
+
+/*//double mouse click event
 window.addEventListener("dblclick", () => {
   defaultColor === singleColor
     ? (defaultColor = gradientColor)
@@ -88,7 +97,7 @@ window.addEventListener("touchend", () => {
       : (defaultColor = singleColor);
   }
   lastTouchEnd = now;
-});
+});*/
 
 function swRegistration() {
   const heart = [
