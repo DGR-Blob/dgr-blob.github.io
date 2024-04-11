@@ -5,6 +5,8 @@ const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+//canvas.width = document.documentElement.clientWidth;
+//canvas.height = document.documentElement.clientHeight;
 
 //single color
 const singleColor = "#0aff0a";
@@ -60,6 +62,8 @@ animate(0);
 window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
+  //canvas.width = document.documentElement.clientWidth;
+  //canvas.height = document.documentElement.clientHeight;
   effect.resize(canvas.width, canvas.height);
   gradientColor = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
   gradientColor.addColorStop(0, "red");
